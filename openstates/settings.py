@@ -65,10 +65,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'django.contrib.sites',
-    #'django.contrib.flatpages',
     'opencivicdata.core.apps.BaseConfig',
     'opencivicdata.legislative.apps.BaseConfig',
+    'admintools.apps.AdmintoolsConfig',
 ]
 
 MIDDLEWARE = [
@@ -89,7 +88,7 @@ WSGI_APPLICATION = 'openstates.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'newopenstates',
+        'NAME': 'opencivicdata',
         'USER': 'test',
         'PASSWORD': 'test',
         'HOST': 'localhost',
